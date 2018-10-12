@@ -10,5 +10,20 @@
     "persistent": false
   },
   "devtools_page": "devtools.html",
-  "homepage_url": "http://path/to/homepage"
+  "homepage_url": "http://path/to/homepage",
+  "page_action": {
+    "default_popup": "",
+    "default_icon": {
+      "16": "assets/images/hh_16.png",
+      "32": "assets/images/hh_32.png",
+      "48": "assets/images/hh_48.png",
+      "128": "assets/images/hh_128.png"
+    }
+  },
+  "icon": {
+    "16": "assets/images/hh_16.png",
+    "32": "assets/images/hh_32.png",
+    "48": "assets/images/hh_48.png",
+    "128": "assets/images/hh_128.png"
+  }
 }
