@@ -105,5 +105,6 @@ document.addEventListener('DOMContentLoaded', function() {
     highlightHeadings();
     appendKeyToDOM();
     insertBadgeStyles();
+    checkPageButton.disabled = true;
   }, false);
 }, false);

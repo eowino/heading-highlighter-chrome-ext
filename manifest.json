@@ -4,6 +4,9 @@
   "version": "1.0",
   "description": "Highlights all the headings on a page to visually allow the user to see the heading hierarchy.",
   "manifest_version": 2,
+  "permissions": [
+    "activeTab"
+  ],
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
