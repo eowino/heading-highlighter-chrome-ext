@@ -36,10 +36,13 @@ var headings = {
   }
 };
 
-// initialise all headings in the DOM
-for (let h in headings) {
-  headings[h].elements = [..._(h)];
+function initialiseHeadings() {
+  // initialise all headings in the DOM
+  for (let h in headings) {
+    headings[h].elements = [..._(h)];
+  }
 }
+
 
 function getBadgeStyles() {
   var styleEl = document.createElement('style');
@@ -95,6 +98,12 @@ function appendKeyToDOM() {
   document.body.appendChild(container);
 }
 
-highlightHeadings();
-appendKeyToDOM();
-insertBadgeStyles();
+document.addEventListener('DOMContentLoaded', function() {
+  var checkPageButton = document.getElementById('hheInitHeadingPlugin');
+  checkPageButton.addEventListener('click', function() {
+    initialiseHeadings();
+    highlightHeadings();
+    appendKeyToDOM();
+    insertBadgeStyles();
+  }, false);
+}, false);
