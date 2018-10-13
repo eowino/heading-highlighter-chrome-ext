@@ -31,11 +31,16 @@
         button {
             padding: 8px;
             border: 0;
-            background: #fff;
+            background-color: #fff;
             box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);;
             text-transform: uppercase;
             border-radius: 2px;
             margin-bottom: 6px;
+        }
+
+        button:hover {
+            background-color: #eee;
+            cursor: pointer;
         }
 
         .container {
@@ -43,11 +48,20 @@
             text-align: center;
             padding: 6px;
         }
+
+        .badge {
+            background-color: #fff;
+            border-radius: 3px;
+            margin: 8px;
+            display: inline-block;
+            padding-top: 6px;
+        }
     </style>
 </head>
 
 <body style="opacity: 1; transition: opacity 0.4s ease-out 0s;">
     <div class="container">
+        <div class="badge"><img height="60px" width="60px" src="./assets//images/hh_128.png" alt="Highlight Heading logo"></div>
         <h1>Highlight Headings</h1>
         <p>Click to highlight all the headings on the page</p>
         <button id="hheInitHeadingPlugin">Highlight Headings</button>
