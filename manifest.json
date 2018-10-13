@@ -1,11 +1,14 @@
 {
   "name": "HTML Heading Highlighter",
   "short_name": "Highlight Headings",
-  "version": "1.0",
+  "version": "0.1.0",
   "description": "Highlights all the headings on a page to visually allow the user to see the heading hierarchy.",
   "manifest_version": 2,
-  "permissions": [
-    "activeTab"
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
   ],
   "browser_action": {
     "default_popup": "popup.html",
@@ -22,8 +25,7 @@
     "48": "assets/images/hh_48.png",
     "128": "assets/images/hh_128.png"
   },
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  }
+  "permissions": [
+    "tabs"
+  ]
 }
