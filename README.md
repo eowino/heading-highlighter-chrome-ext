@@ -1,5 +1,6 @@
 # HTML Heading Highlighter
-## A chrome extension that highlights all the headings (h1-h6) on the page. 
+
+A chrome extension that highlights all the headings (h1-h6) on the page. 
 
 [HTML Heading Highlighter Chrome Extension](https://chrome.google.com/webstore/detail/html-heading-highlighter/cdfideipbjhenjiijgmifpfgkhoneaic)
 
