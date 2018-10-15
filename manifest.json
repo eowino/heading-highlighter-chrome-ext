@@ -1,7 +1,7 @@
 {
   "name": "HTML Heading Highlighter",
   "short_name": "Highlight Headings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Highlights all the headings on a page to visually allow the user to see the heading hierarchy.",
   "manifest_version": 2,
   "content_scripts": [
